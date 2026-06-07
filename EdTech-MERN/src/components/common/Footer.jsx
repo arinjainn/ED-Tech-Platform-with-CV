@@ -30,8 +30,13 @@ const Footer = () => {
           {/* Section 1 */}
           <div className="lg:w-[50%] flex flex-wrap flex-row justify-between lg:border-r lg:border-richblack-700 pl-3 lg:pr-5 gap-3">
             <div className="w-[30%] flex flex-col gap-3 lg:w-[30%] mb-7 lg:pl-0">
-              <img src={Logo} alt="" className="object-contain" />
-              <h1 className="text-richblack-50 font-semibold text-[16px]">
+              <Link to="/">
+                <div className="text-2xl font-bold font-inter tracking-wide flex items-center gap-1 select-none">
+                  <span className="text-richblack-25">Course</span>
+                  <span className="text-yellow-50">IT</span>
+                </div>
+              </Link>
+              <h1 className="text-richblack-50 font-semibold text-[16px] mt-2">
                 Company
               </h1>
               <div className="flex flex-col gap-2">
@@ -173,7 +178,7 @@ const Footer = () => {
           </div>
 
           <div className="text-center">
-            Made with Hardwork © 2025 Studynotion-Arin
+            Made with Hardwork © 2025 CourseIT-Arin
           </div>
         </div>
       </div>
