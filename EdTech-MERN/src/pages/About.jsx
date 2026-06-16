@@ -16,8 +16,9 @@ import Footer from "../components/common/Footer"
 const About = () => {
   return (
     <div>
-      <section className="bg-richblack-700">
-        <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-center text-white">
+      <section className="bg-[#000814] border-b border-richblack-800 py-12 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[300px] w-[500px] rounded-full bg-blue-900/5 blur-[120px] pointer-events-none"></div>
+        <div className="relative z-10 mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-center text-white">
           <header className="mx-auto py-20 text-4xl font-semibold lg:w-[70%]">
             Driving Innovation in Online Education for a
             <HighlightText text={"Brighter Future"} />

@@ -60,8 +60,9 @@ const Catalog = () => {
       return (
         <>
           {/* Hero Section */}
-          <div className=" box-content bg-richblack-800 px-4">
-            <div className="mx-auto flex min-h-[260px] max-w-maxContentTab flex-col justify-center gap-4 lg:max-w-maxContent ">
+          <div className="box-content bg-[#000814] border-b border-richblack-800 px-4 relative overflow-hidden">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[200px] w-[400px] rounded-full bg-blue-900/5 blur-[100px] pointer-events-none"></div>
+            <div className="relative z-10 mx-auto flex min-h-[260px] max-w-maxContentTab flex-col justify-center gap-4 lg:max-w-maxContent ">
               <p className="text-sm text-richblack-300">
                 {`Home / Catalog / `}
                 <span className="text-yellow-25">
