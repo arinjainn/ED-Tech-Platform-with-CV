@@ -5,12 +5,12 @@ CourseIT is an advanced e-learning ecosystem built on the MERN stack (MongoDB, E
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://courseit-gilt.vercel.app/)
 ---
 
-## 📸 Application Preview
+## Application Preview
 ![CourseIT Main Interface](EdTech-MERN/images/mainpage.png)
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 *   **Privacy-First Real-Time Telemetry**: Uses Google MediaPipe models running locally in the browser via WebAssembly (WASM). No raw video data is transmitted to the server; only lightweight attention scores and ergonomic flags are logged at 10-second intervals.
 *   **State-Controlled Camera Lifecycle**: Physical camera activity is bound to the video player state. The webcam stream boots instantly when a lecture starts and shuts down completely (releasing hardware tracks) when paused, ended, or upon page navigation.
@@ -20,7 +20,7 @@ CourseIT is an advanced e-learning ecosystem built on the MERN stack (MongoDB, E
 
 ---
 
-## 📐 Mathematical Telemetry Models
+## Mathematical Telemetry Models
 
 All computer vision tracking runs locally on client-side threads (CPU/GPU) at sub-30ms intervals.
 
@@ -59,7 +59,7 @@ Ergonomic posture is graded based on $D_{\text{head}}$:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The interaction model of the platform components, services, and APIs is detailed below:
 
@@ -72,7 +72,7 @@ The underlying MongoDB collection relationships and data flows are structured as
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend (Client)
 *   **React.js** (v18.2.0)
