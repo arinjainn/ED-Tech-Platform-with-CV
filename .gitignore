@@ -8,3 +8,7 @@ browser/
 *.webp
 *.png
 *.img
+
+# Allow project asset images to be tracked by git
+!EdTech-MERN/images/**
+!EdTech-MERN/src/assets/**
