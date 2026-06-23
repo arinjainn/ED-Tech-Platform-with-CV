@@ -2,6 +2,7 @@
 
 CourseIT is an advanced e-learning ecosystem built on the MERN stack (MongoDB, Express, React, Node.js) that bridges the pedagogical gap in asynchronous digital education. By integrating local, webcam-based computer vision telemetry and an interactive programming environment, the platform enables detailed attention tracking and physical ergonomic feedback without compromising user privacy.
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://courseit-gilt.vercel.app/)
 ---
 
 ## 📸 Application Preview
