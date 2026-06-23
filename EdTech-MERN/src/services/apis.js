@@ -1,7 +1,5 @@
-const BASE_URL = process.env.REACT_BASE || "http://localhost:4000/api/v1";
-//"http://localhost:4000/api/v1"
-//"https://padhaicrow.onrender.com/api/v1"
-//process.env.REACT_BASE ||
+const BASE_URL = process.env.REACT_APP_BASE_URL || process.env.REACT_BASE || "http://localhost:4000/api/v1";
+
 
 // AUTH ENDPOINTS
 export const endpoints = {
@@ -72,4 +70,12 @@ export const settingsEndpoints = {
   UPDATE_PROFILE_API: BASE_URL + "/profile/updateProfile",
   CHANGE_PASSWORD_API: BASE_URL + "/auth/changepassword",
   DELETE_PROFILE_API: BASE_URL + "/profile/deleteProfile",
+};
+
+// ANALYTICS & ENGAGEMENT ENDPOINTS
+export const analyticsEndpoints = {
+  COURSE_STUDENTS_ANALYTICS_API: (courseId) => BASE_URL + `/analytics/course-students/${courseId}`,
+  INSTRUCTOR_ANALYTICS_API: BASE_URL + "/analytics/instructor",
+  STUDENT_ANALYTICS_API: (studentId, courseId) => BASE_URL + `/analytics/student/${studentId}/${courseId}`,
+  SAVE_ENGAGEMENT_API: BASE_URL + "/engagement/saveEngagement",
 };

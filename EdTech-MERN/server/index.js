@@ -25,11 +25,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    //frontend
-    //jo bhi requsest frontend sey aari hai usey hamey entertain karna hai
-    origin: "http://localhost:3000",
-    //http://localhost:3000
-    //"https://arin.vercel.app"
+    origin: process.env.FRONTEND_URL ? [process.env.FRONTEND_URL, "http://localhost:3000"] : "http://localhost:3000",
     credentials: true,
   }),
 );

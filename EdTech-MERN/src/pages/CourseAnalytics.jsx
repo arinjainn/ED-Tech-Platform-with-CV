@@ -3,6 +3,7 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { IoArrowBackOutline } from "react-icons/io5";
+import { analyticsEndpoints } from "../services/apis";
 
 const CourseAnalytics = () => {
   const { courseId } = useParams();
@@ -14,8 +15,9 @@ const CourseAnalytics = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
+        const { COURSE_STUDENTS_ANALYTICS_API } = analyticsEndpoints;
         const response = await axios.get(
-          `http://localhost:4000/api/v1/analytics/course-students/${courseId}`,
+          COURSE_STUDENTS_ANALYTICS_API(courseId),
           {
             headers: {
               Authorization: `Bearer ${token}`,

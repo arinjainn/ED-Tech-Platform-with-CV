@@ -7,6 +7,7 @@ import {
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { analyticsEndpoints } from "../../../services/apis";
 
 const EngagementTracker = ({ active }) => {
   const webcamRef = useRef(null);
@@ -49,8 +50,9 @@ const EngagementTracker = ({ active }) => {
     console.log("SENDING ANALYTICS");
 
     try {
+      const { SAVE_ENGAGEMENT_API } = analyticsEndpoints;
       const response = await axios.post(
-        "http://localhost:4000/api/v1/engagement/saveEngagement",
+        SAVE_ENGAGEMENT_API,
         {
           courseId,
           attentionScore: attentionRef.current,
